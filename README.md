@@ -3,9 +3,9 @@ A multi-use calculator
 
 Initial Options
 
-A - Percentage Calculator
-B - Volume Calculator
-C - Random Number Generator
+- Percentage Calculator
+- Volume Calculator
+- Random Number Generator
 
 Additional Options
 
