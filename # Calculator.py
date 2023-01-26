@@ -25,7 +25,7 @@ print("""
 """)
 
 while True:
-    
+
     type = input("""Welcome to a multi method calculator
 You can choose one of the following calculators - When chosen, the additional options related to the type of calculator will populate.
 A - Percentage Calculator
@@ -59,7 +59,7 @@ Steps:
 
 # List of options the user can choose related to volume, once the user choose a type, the list of conversions will display.
         print() # Empty Space
-        volume_choice = input("""Here are your options! Once you choose, your list of conversions will populate
+        volume_choice = input("""Here are your options! Once you choose, a list of additional conversions or how it works will populate
 A - Sphere Volume Calculator
 B - Cone Volume Calculator
 C - Cube Volume Calculator
@@ -72,17 +72,83 @@ I - Ellipsoid Volume Calculator
 J - Square Pyramid Volume Calculator
 K - Tube Volume Calculator
 Please tpye your answer here: """)
-        if volume_choice == 'a':
-            print("This works")
-        
+
+        # Option A
+        if volume_choice == 'a' or volume_choice == 'A':
+            print("You Chose A Sphere Volume Calculator")
+            print() # Empty space
+            print(""" How it works """)
 
         # Option B
-        elif volume_choice == 'b' or volume_choice 'B':
+        elif volume_choice == 'b' or volume_choice == 'B':
             print("")
 
-# If the user chose C - A Random Number Generator, they will be provided a definition and a calculation for their input    
+        # Option C
+        elif volume_choice == 'c' or volume_choice == 'B':
+            print("")
+
+        # Option D
+        elif volume_choice == 'd' or volume_choice == 'B':
+            print("You chose Cylinder Volume Calculator")
+            print() # Empty space
+            print(""" How it works - Example Base Radius (r) = 1 in meters, Height (h) = 2 in meters results in:
+volume = 	πr2h
+       = 	π×12×2
+       = 	2π
+       = 	6.2831853071796 meters3
+You can also convert using miles, yards, feet, inches and more!
+""")
+
+        # Option E
+        elif volume_choice == 'e' or volume_choice == 'E':
+            print("You chose Rectangular Tank Volume Calculator")
+            print() # EMpty space
+            print("How it works : lenght(l) * width(w) * height(h)")
+            rectangular_tank_volume_length = float(input("Please enter a length :"))
+            rectangular_tank_volume_width = float(input("Please enter a length :"))
+            rectangular_tank_volume_height = float(input("Please enter a length :"))
+            rtv_result = rectangular_tank_volume_length * rectangular_tank_volume_width * rectangular_tank_volume_height
+            print(f"""The volume of a rectagular tank with a length of {rectangular_tank_volume_length}, a width of {rectangular_tank_volume_width} and a height {rectangular_tank_volume_height}
+the result : {rtv_result}""")
+
+        # Option B
+        elif volume_choice == 'f' or volume_choice == 'B':
+            print("")
+
+        # Option B
+        elif volume_choice == 'g' or volume_choice == 'B':
+            print("")
+
+        # Option B
+        elif volume_choice == 'h' or volume_choice == 'B':
+            print("")
+
+        # Option B
+        elif volume_choice == 'i' or volume_choice == 'B':
+            print("")
+
+        # Option B
+        elif volume_choice == 'j' or volume_choice == 'B':
+            print("")
+
+        # Option B
+        elif volume_choice == 'k' or volume_choice == 'B':
+            print("")
+            
+
+# If the user chose C - A Random Number Generator, they will be provided a definition, additional options and solutions
     elif type == 'C' or type == 'c':
         print("You chose a Random Number Generator")
+        random_choice = input("Please choose one of the following!") 
+
+        if random_choice == 'a':
+            type = input("""Welcome to a multi method calculator
+You can choose one of the following calculators - When chosen, the additional options related to the type of calculator will populate.
+A - Percentage Calculator
+B - Volume Calculator
+C - Random Number Generator
+Please type a letter:""")
 
     else:
         print("Please tpye the letter, a, b or c")
+
