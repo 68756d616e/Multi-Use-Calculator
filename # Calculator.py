@@ -77,18 +77,36 @@ Please tpye your answer here: """)
         if volume_choice == 'a' or volume_choice == 'A':
             print("You Chose A Sphere Volume Calculator")
             print() # Empty space
-            print(""" How it works """)
+            print(""" How it works - Example Radius(r) 1 meters 
+Volume = 	4/3 πr3
+       = 	4/3	×π×13
+       = 	4.1887902047864 meters3
+""")
 
         # Option B
         elif volume_choice == 'b' or volume_choice == 'B':
-            print("")
+            print("""You chose a Cone Volume Calculator
+       ^    
+      /|\   
+     / | \  
+    /  |  \
+        
+KCK '-.|.-'      
+""")
+            print("""How it works - Base Radius(r) 1, Height(h) 1 both in meters!
+Volume = 1/3 πr2h
+       = 1/3 ×π×12×1
+       = 1.0471975511966 meters3""")
+            print() # Empty space
 
         # Option C
-        elif volume_choice == 'c' or volume_choice == 'B':
-            print("")
+        elif volume_choice == 'c' or volume_choice == 'C':
+            print("You chose a Cube Volume Calculator")
+            print("""How it works - Edge Length (a) 1 Meters
+Volume = 1(3power) = 1 meters3""")
 
         # Option D
-        elif volume_choice == 'd' or volume_choice == 'B':
+        elif volume_choice == 'd' or volume_choice == 'D':
             print("You chose Cylinder Volume Calculator")
             print() # Empty space
             print(""" How it works - Example Base Radius (r) = 1 in meters, Height (h) = 2 in meters results in:
@@ -97,12 +115,12 @@ volume = 	πr2h
        = 	2π
        = 	6.2831853071796 meters3
 You can also convert using miles, yards, feet, inches and more!
-""")
+Unfortunately we do not have a calculater available""")
 
         # Option E
         elif volume_choice == 'e' or volume_choice == 'E':
             print("You chose Rectangular Tank Volume Calculator")
-            print() # EMpty space
+            print() # Empty space
             print("How it works : lenght(l) * width(w) * height(h)")
             rectangular_tank_volume_length = float(input("Please enter a length :"))
             rectangular_tank_volume_width = float(input("Please enter a length :"))
@@ -111,29 +129,45 @@ You can also convert using miles, yards, feet, inches and more!
             print(f"""The volume of a rectagular tank with a length of {rectangular_tank_volume_length}, a width of {rectangular_tank_volume_width} and a height {rectangular_tank_volume_height}
 the result : {rtv_result}""")
 
-        # Option B
-        elif volume_choice == 'f' or volume_choice == 'B':
-            print("")
+        # Option F
+        elif volume_choice == 'f' or volume_choice == 'F':
+            print("You chose a Capsule Volume Calculator")
+            print("""How it works
+Volume = 4/3 πr3 + πr2h
+       = 4/3 ×π×13 + π×12×1
+       = 7.3303828583762 meters3""")
+            print() # Empty space
 
-        # Option B
-        elif volume_choice == 'g' or volume_choice == 'B':
-            print("")
+        # Option G
+        elif volume_choice == 'g' or volume_choice == 'G':
+            print("You chose a Spherical Cap Volume Calculator")
+            print("""How it works - The calculator only needs two values. The following result is based on r1 and r2. It is a hemisphere since R=r
+It is a hemisphere since R=r.
+Example : Base Radius(r) 1, Ball Radius(R) 1, Height(h) in meters
+Height = 1 meters
+Volume = 1/3 πh2(3R - h)
+       = 1/3 ×π×12(3×1 - 1)
+       = 	2.0943951023932 meters3 """)
 
-        # Option B
-        elif volume_choice == 'h' or volume_choice == 'B':
-            print("")
+        # Option H
+        elif volume_choice == 'h' or volume_choice == 'H':
+            print("You chose a Conical Frustum Volume Calculator")
+            print("How it works")
 
-        # Option B
-        elif volume_choice == 'i' or volume_choice == 'B':
-            print("")
+        # Option I
+        elif volume_choice == 'i' or volume_choice == 'I':
+            print("You chose a Ellipsoid Volume Calculator")
+            print("How it works")
 
-        # Option B
-        elif volume_choice == 'j' or volume_choice == 'B':
-            print("")
+        # Option J
+        elif volume_choice == 'j' or volume_choice == 'J':
+            print("You chose a Square Pyramid Volume Calculator")
+            print("How it works")
 
-        # Option B
-        elif volume_choice == 'k' or volume_choice == 'B':
-            print("")
+        # Option K
+        elif volume_choice == 'k' or volume_choice == 'K':
+            print("You chose a Tube Volume Calculator")
+            print("How it works")
             
 
 # If the user chose C - A Random Number Generator, they will be provided a definition, additional options and solutions
