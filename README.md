@@ -23,3 +23,7 @@ The Volume calculator has the following options :
 - Ellipsoid Volume Calculator
 - Square Pyramid Volume Calculator
 - Tube Volume Calculator
+
+Random Number Generator
+- A random number generator 1 - 100
+- A random number generator - The users choose
