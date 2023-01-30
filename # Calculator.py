@@ -222,10 +222,16 @@ Type here: """)
                         break
                 else:
                     break
-            
-            elif choice == 'B' or choice == 'b':
-                print()
-            
+
+# It requests the lower and upper numbers, requests how many decimal points the user would like and displays the result. A random number generator with a decimal point            
+            elif random_choice == 'B' or random_choice == 'b':
+                lower_limit = float(input("Please enter a lower limit :"))
+                upper_limit = float(input("Please enter a upper limit :"))
+                decimal_points = int(input("Enter the number of decimal points: ")) # It doesnt work exactly as planned
+                random_number = random.uniform(lower_limit, upper_limit)
+                formatted_value = "{:.{}f}".format(random_number, decimal_points)
+                print(random_number)
+                
             else:
                 break
 
