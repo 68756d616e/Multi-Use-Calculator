@@ -1,5 +1,7 @@
 # Multi-use Calculator
 
+import random
+
 print("""
  _____________________
 |  _________________  |
@@ -177,22 +179,55 @@ Volume = 1/3 a2h
         # Option K
         elif volume_choice == 'k' or volume_choice == 'K':
             print("You chose a Tube Volume Calculator")
-            print("How it works
-")
-            
+            print("""How it works - Example Outer Diameter(d1) 1, Inner Diameter(d2) 1 in meters
+Volume = πd12 - d22	l
+        ________________
+                4
+       = 	π×	12 - 12	×1
+        ________________
+                4
+       = 0π
+       = 0 meters3  """)
 
 # If the user chose C - A Random Number Generator, they will be provided a definition, additional options and solutions
     elif type == 'C' or type == 'c':
         print("You chose a Random Number Generator")
-        random_choice = input("Please choose one of the following!") 
+        random_choice = input("""Please choose one of the following!
+A - Random Number Generator
+B - Comprehensive Version 
+Type here: """) 
+    
+# The user will have the option to choose generator from 1 - 100 auto or a generator where they choose the min and max number
+        while True:
+            if random_choice == 'a' or random_choice == 'A':
+                choice = input("""Please choose A or B
+    A - Random from 1 to 100
+    B - You choose the mininum and maxinum numbers and it will produce a random number :""")
+                
+                if choice == 'a' or choice == 'A':
+                    auto_random = random.randint(1,100)
+                    print(f"Please find your random number {auto_random}")
+                    
+                elif choice == 'b' or choice == 'B':
+                    print("You chose the min and max")
+                    number_1 = int(input("Please type any number, this will be a mininum! :"))
+                    number_2 = int(input(f"Please type any number greater than {number_1}, this will be the maximum :"))
+                    max_min = random.randint(number_1, number_2)
+                    print(f"Here is your random number! : {max_min}")
+                    result = input("Again? y or n")
+                    if result == 'y':
+                        print(max_min)
 
-        if random_choice == 'a':
-            type = input("""Welcome to a multi method calculator
-You can choose one of the following calculators - When chosen, the additional options related to the type of calculator will populate.
-A - Percentage Calculator
-B - Volume Calculator
-C - Random Number Generator
-Please type a letter:""")
+                    else:
+                        break
+                else:
+                    break
+            
+            elif choice == 'B' or choice == 'b':
+                print()
+            
+            else:
+                break
 
     else:
         print("Please tpye the letter, a, b or c")
